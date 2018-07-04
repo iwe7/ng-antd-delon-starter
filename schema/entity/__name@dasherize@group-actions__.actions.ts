@@ -44,7 +44,7 @@ export class Load<%= classify(name) %>s implements Action {
 
 export class LoadSuccess<%= classify(name) %>s implements Action {
   readonly type = <%= classify(name) %>ActionTypes.LoadSuccess<%= classify(name) %>s;
-  constructor(public payload: { <%= classify(name) %>s: <%= classify(name) %>[], total: number }) {}
+  constructor(public payload: { <%= camelize(name) %>s: <%= classify(name) %>[], total: number }) {}
 }
 
 export class LoadFail<%= classify(name) %>s implements Action {
@@ -56,13 +56,13 @@ export class LoadFail<%= classify(name) %>s implements Action {
 export class Add<%= classify(name) %> implements Action {
   readonly type = <%= classify(name) %>ActionTypes.Add<%= classify(name) %>;
 
-  constructor(public payload: { <%= classify(name) %>: <%= classify(name) %> }) {}
+  constructor(public payload: { <%= camelize(name) %>: <%= classify(name) %> }) {}
 }
 
 export class AddSuccess<%= classify(name) %> implements Action {
   readonly type = <%= classify(name) %>ActionTypes.AddSuccess<%= classify(name) %>;
 
-  constructor(public payload: { <%= classify(name) %>: <%= classify(name) %> }) {}
+  constructor(public payload: { <%= camelize(name) %>: <%= classify(name) %> }) {}
 }
 
 export class AddFail<%= classify(name) %> implements Action {
@@ -80,7 +80,7 @@ export class Upsert<%= classify(name) %> implements Action {
 export class UpsertSuccess<%= classify(name) %> implements Action {
   readonly type = <%= classify(name) %>ActionTypes.UpsertSuccess<%= classify(name) %>;
 
-  constructor(public payload: { <%= classify(name) %>: <%= classify(name) %> }) {}
+  constructor(public payload: { <%= camelize(name) %>: <%= classify(name) %> }) {}
 }
 
 export class UpsertFail<%= classify(name) %> implements Action {
@@ -92,13 +92,13 @@ export class UpsertFail<%= classify(name) %> implements Action {
 export class Add<%= classify(name) %>s implements Action {
   readonly type = <%= classify(name) %>ActionTypes.Add<%= classify(name) %>s;
 
-  constructor(public payload: { <%= classify(name) %>s: <%= classify(name) %>[] }) {}
+  constructor(public payload: { <%= camelize(name) %>s: <%= classify(name) %>[] }) {}
 }
 
 export class AddSuccess<%= classify(name) %>s implements Action {
   readonly type = <%= classify(name) %>ActionTypes.AddSuccess<%= classify(name) %>s;
 
-  constructor(public payload: { <%= classify(name) %>s: <%= classify(name) %>[] }) {}
+  constructor(public payload: { <%= camelize(name) %>s: <%= classify(name) %>[] }) {}
 }
 
 export class AddFail<%= classify(name) %>s implements Action {
@@ -110,13 +110,13 @@ export class AddFail<%= classify(name) %>s implements Action {
 export class Upsert<%= classify(name) %>s implements Action {
   readonly type = <%= classify(name) %>ActionTypes.Upsert<%= classify(name) %>s;
 
-  constructor(public payload: { <%= classify(name) %>s: <%= classify(name) %>[] }) {}
+  constructor(public payload: { <%= camelize(name) %>s: <%= classify(name) %>[] }) {}
 }
 
 export class UpsertSuccess<%= classify(name) %>s implements Action {
   readonly type = <%= classify(name) %>ActionTypes.UpsertSuccess<%= classify(name) %>s;
 
-  constructor(public payload: { <%= classify(name) %>s: <%= classify(name) %>[] }) {}
+  constructor(public payload: { <%= camelize(name) %>s: <%= classify(name) %>[] }) {}
 }
 
 export class UpsertFail<%= classify(name) %>s implements Action {
@@ -128,13 +128,13 @@ export class UpsertFail<%= classify(name) %>s implements Action {
 export class Update<%= classify(name) %> implements Action {
   readonly type = <%= classify(name) %>ActionTypes.Update<%= classify(name) %>;
 
-  constructor(public payload: { <%= classify(name) %>: Update<<%= classify(name) %>> }) {}
+  constructor(public payload: { <%= camelize(name) %>: Update<<%= classify(name) %>> }) {}
 }
 
 export class UpdateSuccess<%= classify(name) %> implements Action {
   readonly type = <%= classify(name) %>ActionTypes.UpdateSuccess<%= classify(name) %>;
 
-  constructor(public payload: { <%= classify(name) %>: Update<<%= classify(name) %>> }) {}
+  constructor(public payload: { <%= camelize(name) %>: Update<<%= classify(name) %>> }) {}
 }
 
 export class UpdateFail<%= classify(name) %> implements Action {
@@ -146,7 +146,7 @@ export class UpdateFail<%= classify(name) %> implements Action {
 export class Update<%= classify(name) %>s implements Action {
   readonly type = <%= classify(name) %>ActionTypes.Update<%= classify(name) %>s;
 
-  constructor(public payload: { <%= classify(name) %>s: Update<<%= classify(name) %>>[] }) {}
+  constructor(public payload: { <%= camelize(name) %>s: Update<<%= classify(name) %>>[] }) {}
 }
 
 export class UpdateSuccess<%= classify(name) %>s implements Action {

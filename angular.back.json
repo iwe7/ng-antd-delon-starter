@@ -9,6 +9,9 @@
       "projectType": "application",
       "prefix": "",
       "schematics": {
+        "@ngrx/schematics:component": {
+          "styleext": "scss"
+        },
         "iwe7-schematics:component": {
           "styleext": "scss"
         }
@@ -26,13 +29,10 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [{
-              "input": "src/styles.scss",
-              "bundleName": "iwe7"
-            }, {
-              "input": "src/styles.less",
-              "bundleName": "lib"
-            }],
+            "styles": [
+              "src/styles.scss",
+              "src/styles.less"
+            ],
             "scripts": [
               "node_modules/@antv/g2/dist/g2.min.js",
               "node_modules/@antv/data-set/dist/data-set.min.js",
