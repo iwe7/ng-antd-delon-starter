@@ -1,3 +1,4 @@
+import { Iwe7PagesModule } from './iwe7-pages/iwe7-pages.module';
 import { Iwe7ErrorHandler } from './services/iwe7-error.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -15,12 +16,17 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgZorroAntdModule } from 'ng-zorro-antd';
 import { DelonABCModule } from '@delon/abc';
 import { DelonFormModule } from '@delon/form';
-import { registerLocaleData, APP_BASE_HREF } from '@angular/common';
+import {
+  registerLocaleData, APP_BASE_HREF,
+  LocationStrategy
+} from '@angular/common';
 
 /** 配置 angular i18n **/
 import zh from '@angular/common/locales/zh';
 registerLocaleData(zh);
 import { NZ_I18N, zh_CN } from 'ng-zorro-antd';
+
+import { Iwe7LocationStrategy } from 'iwe7-locationstrategy';
 
 @NgModule({
   declarations: [
@@ -28,21 +34,27 @@ import { NZ_I18N, zh_CN } from 'ng-zorro-antd';
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot([], { useHash: true }),
+    RouterModule.forRoot([{
+      path: '',
+      redirectTo: 'oauth',
+      pathMatch: 'full'
+    }]),
     HttpClientModule,
     NgZorroAntdModule.forRoot(),
     DelonABCModule.forRoot(),
     BrowserAnimationsModule,
     DelonFormModule.forRoot(),
     StoreModule.forRoot(reducers, { metaReducers }),
-    !environment.production ? StoreDevtoolsModule.instrument() : [],
+    // !environment.production ? StoreDevtoolsModule.instrument() : [],
     EffectsModule.forRoot([AppEffects]),
-    Iwe7StoreModule
+    Iwe7StoreModule,
+    Iwe7PagesModule
   ],
   providers: [
     { provide: NZ_I18N, useValue: zh_CN },
     { provide: APP_BASE_HREF, useValue: '/' },
-    { provide: ErrorHandler, useClass: Iwe7ErrorHandler }
+    { provide: ErrorHandler, useClass: Iwe7ErrorHandler },
+    { provide: LocationStrategy, useClass: Iwe7LocationStrategy }
   ],
   bootstrap: [AppComponent]
 })

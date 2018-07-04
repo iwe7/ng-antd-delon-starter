@@ -317,6 +317,10 @@
   dependencies:
     "@types/jasmine" "*"
 
+"@types/jquery@*":
+  version "3.3.4"
+  resolved "https://registry.yarnpkg.com/@types/jquery/-/jquery-3.3.4.tgz#f1850fb9a70041a14ace4f81a7ed782db8548317"
+
 "@types/node@^6.0.46":
   version "6.0.113"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-6.0.113.tgz#4b41f38ad03e4b41f9dc259b3b58aecb22c9aebc"
@@ -332,6 +336,12 @@
 "@types/selenium-webdriver@^2.53.35", "@types/selenium-webdriver@~2.53.39":
   version "2.53.43"
   resolved "https://registry.yarnpkg.com/@types/selenium-webdriver/-/selenium-webdriver-2.53.43.tgz#2de3d718819bc20165754c4a59afb7e9833f6707"
+
+"@types/urijs@^1.15.38":
+  version "1.15.38"
+  resolved "https://registry.yarnpkg.com/@types/urijs/-/urijs-1.15.38.tgz#733ff7f18d42de60d0cdba40d8e92673b27cd5a4"
+  dependencies:
+    "@types/jquery" "*"
 
 "@webassemblyjs/ast@1.4.3":
   version "1.4.3"
@@ -3773,6 +3783,12 @@ istanbul@^0.4.5:
     which "^1.1.1"
     wordwrap "^1.0.0"
 
+iwe7-locationstrategy@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/iwe7-locationstrategy/-/iwe7-locationstrategy-0.0.1.tgz#4777b4118103eabfe932aad3e0a874f68146b8ad"
+  dependencies:
+    tslib "^1.9.0"
+
 iwe7-util2@^0.0.2:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/iwe7-util2/-/iwe7-util2-0.0.2.tgz#203f2e2bc3112a4abfce3cf821e07ef898f2b2c9"
@@ -6995,6 +7011,10 @@ uri-js@^4.2.1:
   resolved "https://registry.yarnpkg.com/uri-js/-/uri-js-4.2.2.tgz#94c540e1ff772956e2299507c010aea6c8838eb0"
   dependencies:
     punycode "^2.1.0"
+
+urijs@^1.19.1:
+  version "1.19.1"
+  resolved "https://registry.yarnpkg.com/urijs/-/urijs-1.19.1.tgz#5b0ff530c0cbde8386f6342235ba5ca6e995d25a"
 
 urix@^0.1.0:
   version "0.1.0"

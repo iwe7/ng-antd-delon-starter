@@ -9,7 +9,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "store": "sh ./bin/sh.sh",
-    "comp": "sh ./bin/comp.sh"
+    "comp": "sh ./bin/comp.sh",
+    "page": "sh ./bin/page.sh"
   },
   "private": true,
   "dependencies": {
@@ -35,12 +36,15 @@
     "@ngrx/router-store": "^6.0.1",
     "@ngrx/store": "^6.0.1",
     "@ngrx/store-devtools": "^6.0.1",
+    "@types/urijs": "^1.15.38",
     "ajv": "^6.5.2",
     "core-js": "^2.5.4",
+    "iwe7-locationstrategy": "^0.0.1",
     "iwe7-util2": "^0.0.2",
     "ng-zorro-antd": "^1.1.1",
     "qrious": "^4.0.2",
     "rxjs": "^6.0.0",
+    "urijs": "^1.19.1",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {
