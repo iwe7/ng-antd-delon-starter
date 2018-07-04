@@ -3783,6 +3783,12 @@ istanbul@^0.4.5:
     which "^1.1.1"
     wordwrap "^1.0.0"
 
+iwe7-editor2@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/iwe7-editor2/-/iwe7-editor2-0.0.4.tgz#f9879c48f3c5d48779642031d5cb26d82e7e8cba"
+  dependencies:
+    tslib "^1.9.0"
+
 iwe7-locationstrategy@^0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/iwe7-locationstrategy/-/iwe7-locationstrategy-0.0.1.tgz#4777b4118103eabfe932aad3e0a874f68146b8ad"

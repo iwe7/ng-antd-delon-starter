@@ -1,3 +1,4 @@
+import { Iwe7LayoutModule } from './iwe7-layout/iwe7-layout.module';
 import { Iwe7PagesModule } from './iwe7-pages/iwe7-pages.module';
 import { Iwe7ErrorHandler } from './services/iwe7-error.service';
 import { BrowserModule } from '@angular/platform-browser';
@@ -48,7 +49,8 @@ import { Iwe7LocationStrategy } from 'iwe7-locationstrategy';
     // !environment.production ? StoreDevtoolsModule.instrument() : [],
     EffectsModule.forRoot([AppEffects]),
     Iwe7StoreModule,
-    Iwe7PagesModule
+    Iwe7PagesModule,
+    Iwe7LayoutModule
   ],
   providers: [
     { provide: NZ_I18N, useValue: zh_CN },

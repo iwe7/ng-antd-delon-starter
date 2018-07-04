@@ -4,13 +4,15 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod --deploy-url=../addons/iwe7_oauth2/template/web/",
+    "build": "ng build --prod --deploy-url=../addons/iwe7_car/template/web/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "store": "sh ./bin/sh.sh",
     "comp": "sh ./bin/comp.sh",
-    "page": "sh ./bin/page.sh"
+    "page": "sh ./bin/page.sh",
+    "edit": "sh ./bin/edit.sh",
+    "spage": "sh ./bin/spage.sh"
   },
   "private": true,
   "dependencies": {
@@ -39,6 +41,7 @@
     "@types/urijs": "^1.15.38",
     "ajv": "^6.5.2",
     "core-js": "^2.5.4",
+    "iwe7-editor2": "^0.0.4",
     "iwe7-locationstrategy": "^0.0.1",
     "iwe7-util2": "^0.0.2",
     "ng-zorro-antd": "^1.1.1",
