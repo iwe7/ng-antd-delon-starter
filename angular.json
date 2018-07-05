@@ -1,9 +1,9 @@
 {
-  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "$schema": "./node_designs/@angular/cli/lib/config/schema.json",
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "iwe7-module": {
+    "iwe7-design": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "../../iwe7_module/template/web/",
+            "outputPath": "../../iwe7_design/template/web/",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "iwe7-module:build"
+            "browserTarget": "iwe7-design:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "iwe7-module:build:production"
+              "browserTarget": "iwe7-design:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "iwe7-module:build"
+            "browserTarget": "iwe7-design:build"
           }
         },
         "test": {
@@ -101,13 +101,13 @@
               "src/tsconfig.spec.json"
             ],
             "exclude": [
-              "**/node_modules/**"
+              "**/node_designs/**"
             ]
           }
         }
       }
     },
-    "iwe7-module-e2e": {
+    "iwe7-design-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -115,11 +115,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "iwe7-module:serve"
+            "devServerTarget": "iwe7-design:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "iwe7-module:serve:production"
+              "devServerTarget": "iwe7-design:serve:production"
             }
           }
         },
@@ -128,14 +128,14 @@
           "options": {
             "tsConfig": "e2e/tsconfig.e2e.json",
             "exclude": [
-              "**/node_modules/**"
+              "**/node_designs/**"
             ]
           }
         }
       }
     }
   },
-  "defaultProject": "iwe7-module",
+  "defaultProject": "iwe7-design",
   "cli": {
     "defaultCollection": "iwe7-schematics"
   }
